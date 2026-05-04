@@ -14,16 +14,83 @@ This project is a family finance tracking and budget management system for multi
 
 ---
 
-## 2. Platform
+## 2. Technical Requirement
 
 ### Target Platforms
 - Web (initial)
 - Mobile iOS / Android (future)
+### Suggested Tech Stack
+## Architecture Overview
 
-### Suggested Tech Stack (Editable)
-- Frontend: Next.js  
-- Backend: Node.js (NestJS)  
-- Database: PostgreSQL  
+Hybrid architecture with separation between core system and AI services:
+Frontend → Backend (Core API) → AI Service
+
+### Frontend
+- Framework: Next.js
+- Purpose:
+  - User interface
+  - Forms (transactions, budget)
+  - Dashboard (analytics & charts)
+
+### Backend (Core System)
+- Framework: NestJS (Node.js)
+- Responsibilities:
+  - Authentication & authorization
+  - Transaction management
+  - Split & settlement logic
+  - Budget management
+  - Approval workflow
+  - Audit logging
+  - Data validation
+  - API gateway to AI services
+
+---
+
+### AI Service (Independent Microservice)
+
+- Framework: Python (FastAPI)
+- Responsibilities:
+  - OCR processing (receipts, screenshots)
+  - Data extraction (amount, date, merchant)
+  - Auto categorization
+  - AI insights & recommendations
+  - Agent workflows (LangGraph)
+
+---
+
+### Database
+- PostgreSQL
+
+### AI / ML Layer
+
+- LLM Integration (API-based)
+- OCR Engine (to be selected)
+- LangGraph (for agent workflows)
+
+---
+
+### Service Communication
+
+#### Pattern
+- REST API (initial)
+- Internal service-to-service calls
+
+#### Example Flow
+
+1. User uploads receipt via frontend  
+2. Request sent to NestJS backend  
+3. Backend forwards image to AI service  
+4. AI service processes OCR and returns structured data  
+5. Backend validates and stores transaction in database  
+
+---
+
+### Deployment (Initial Suggestion -> To be decided)
+
+- Frontend: Vercel  
+- Backend (NestJS): Railway / Fly.io / VPS  
+- AI Service (Python): Railway / separate container  
+- Database: PostgreSQL (managed or self-hosted)  
 
 ---
 
