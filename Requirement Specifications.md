@@ -85,14 +85,15 @@ Frontend → Backend (Core API) → AI Service
 
 ---
 
-### Deployment (Initial Suggestion -> To be decided)
+### Deployment (Initial Idea)
 
-- Frontend: Vercel vs Github Page 
-- Backend (NestJS): Railway / Fly.io / VPS  -> Digital Ocean, raspberry pi(hardware)
-- AI Service (Python): Railway / separate container  
-- Database: PostgreSQL (managed or self-hosted)  -> Firebase, Supabase
-
----
+- Frontend: GitHub Pages (Free)
+- Backend (Java) + AI Service (Python): Fly.io (Free tier to start) / Digital Ocean
+  - Optional: Raspberry pi (hardware)
+- Database: PostgreSQL (managed or self-hosted)  -> Supabase
+  - Optional: Azure/GCP/AWS or Raspberry pi (hardware)
+- Cost Estimate
+  - $0–$5/month total   
 
 ## 3. User Roles
 
