@@ -88,7 +88,7 @@ Frontend → Backend (Core API) → AI Service
 ### Deployment (Initial Suggestion -> To be decided)
 
 - Frontend: Vercel vs Github Page 
-- Backend (NestJS): Railway / Fly.io / VPS  -> Digital Ocean
+- Backend (NestJS): Railway / Fly.io / VPS  -> Digital Ocean, raspberry pi(hardware)
 - AI Service (Python): Railway / separate container  
 - Database: PostgreSQL (managed or self-hosted)  -> Firebase, Supabase
 
