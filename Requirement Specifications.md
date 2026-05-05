@@ -33,7 +33,7 @@ Frontend → Backend (Core API) → AI Service
   - Dashboard (analytics & charts)
 
 ### Backend (Core System)
-- Framework: NestJS (Node.js)
+- Framework: NestJS (Node.js) -> vs .Net vs Java
 - Responsibilities:
   - Authentication & authorization
   - Transaction management
@@ -87,10 +87,10 @@ Frontend → Backend (Core API) → AI Service
 
 ### Deployment (Initial Suggestion -> To be decided)
 
-- Frontend: Vercel  
-- Backend (NestJS): Railway / Fly.io / VPS  
+- Frontend: Vercel vs Github Page 
+- Backend (NestJS): Railway / Fly.io / VPS  -> Digital Ocean
 - AI Service (Python): Railway / separate container  
-- Database: PostgreSQL (managed or self-hosted)  
+- Database: PostgreSQL (managed or self-hosted)  -> Firebase, Supabase
 
 ---
 
