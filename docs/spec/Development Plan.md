@@ -10,7 +10,6 @@
 
 ## Phase 2
 - Dashboard   
-- Budget  
 - Approval workflow  
 
 ## Phase 3

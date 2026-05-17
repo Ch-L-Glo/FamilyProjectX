@@ -62,7 +62,7 @@ Frontend → Backend (Core API) → AI Service → Database
 ---
 
 ### Database
-- PostgreSQL
+- PostgreSQL`
 
 ### Service Communication
 
@@ -245,8 +245,6 @@ Balance is NOT stored directly in database.
 ### 7.2 Features
 - Monthly budget  
 - Budget vs actual tracking  
-
-### 7.3 Approval Flow
 - Family budget created by primary users  
 - Optional edit by normal users 
 
